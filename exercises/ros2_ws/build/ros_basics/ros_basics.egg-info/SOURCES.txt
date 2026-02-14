@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+resource/ros_basics
+ros_basics/__init__.py
+ros_basics/listener.py
+ros_basics/talker.py
+ros_basics.egg-info/PKG-INFO
+ros_basics.egg-info/SOURCES.txt
+ros_basics.egg-info/dependency_links.txt
+ros_basics.egg-info/entry_points.txt
+ros_basics.egg-info/requires.txt
+ros_basics.egg-info/top_level.txt
+ros_basics.egg-info/zip-safe

@@ -1,0 +1,25 @@
+[0.401s] Invoking command in '/home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics': PYTHONPATH=/home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/build --no-deps symlink_data
+[0.540s] running develop
+[0.607s] running egg_info
+[0.607s] creating ros_basics.egg-info
+[0.607s] writing ros_basics.egg-info/PKG-INFO
+[0.607s] writing dependency_links to ros_basics.egg-info/dependency_links.txt
+[0.607s] writing entry points to ros_basics.egg-info/entry_points.txt
+[0.607s] writing requirements to ros_basics.egg-info/requires.txt
+[0.607s] writing top-level names to ros_basics.egg-info/top_level.txt
+[0.607s] writing manifest file 'ros_basics.egg-info/SOURCES.txt'
+[0.608s] reading manifest file 'ros_basics.egg-info/SOURCES.txt'
+[0.608s] writing manifest file 'ros_basics.egg-info/SOURCES.txt'
+[0.609s] running build_ext
+[0.609s] Creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/python3.10/site-packages/ros-basics.egg-link (link to .)
+[0.609s] Installing listener script to /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/ros_basics
+[0.609s] Installing talker script to /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/ros_basics
+[0.609s] 
+[0.609s] Installed /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics
+[0.609s] running symlink_data
+[0.610s] creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index
+[0.610s] creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index
+[0.610s] creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index/packages
+[0.610s] symbolically linking /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/resource/ros_basics -> /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index/packages
+[0.610s] symbolically linking /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/package.xml -> /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ros_basics
+[0.624s] Invoked command in '/home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics' returned '0': PYTHONPATH=/home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/build --no-deps symlink_data

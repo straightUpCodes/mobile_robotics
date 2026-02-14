@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating ros_basics.egg-info
+writing ros_basics.egg-info/PKG-INFO
+writing dependency_links to ros_basics.egg-info/dependency_links.txt
+writing entry points to ros_basics.egg-info/entry_points.txt
+writing requirements to ros_basics.egg-info/requires.txt
+writing top-level names to ros_basics.egg-info/top_level.txt
+writing manifest file 'ros_basics.egg-info/SOURCES.txt'
+reading manifest file 'ros_basics.egg-info/SOURCES.txt'
+writing manifest file 'ros_basics.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/python3.10/site-packages/ros-basics.egg-link (link to .)
+Installing listener script to /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/ros_basics
+Installing talker script to /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/lib/ros_basics
+
+Installed /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics
+running symlink_data
+creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index
+creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index
+creating /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index/packages
+symbolically linking /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/resource/ros_basics -> /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ament_index/resource_index/packages
+symbolically linking /home/fred/mobile_robotics/exercises/ros2_ws/build/ros_basics/package.xml -> /home/fred/mobile_robotics/exercises/ros2_ws/install/ros_basics/share/ros_basics

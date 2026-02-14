@@ -1,0 +1,4 @@
+[console_scripts]
+listener = ros_basics.listener:main
+talker = ros_basics.talker:main
+
