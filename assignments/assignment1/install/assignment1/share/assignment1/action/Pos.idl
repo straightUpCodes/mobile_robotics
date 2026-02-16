@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from assignment1/action/Pos.action
+// generated code does not contain a copyright notice
+
+
+module assignment1 {
+  module action {
+    struct Pos_Goal {
+      double x;
+
+      double y;
+
+      double theta;
+    };
+    struct Pos_Result {
+      string result_message;
+    };
+    struct Pos_Feedback {
+      string feedback_message;
+    };
+  };
+};

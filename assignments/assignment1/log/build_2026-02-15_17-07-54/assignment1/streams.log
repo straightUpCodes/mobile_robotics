@@ -1,0 +1,219 @@
+[0.006s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fred/mobile_robotics/assignments/assignment1/src/assignment1 -DCMAKE_INSTALL_PREFIX=/home/fred/mobile_robotics/assignments/assignment1/install/assignment1
+[0.014s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.087s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.124s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.125s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.126s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.294s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.565s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.566s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.581s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.581s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.581s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.581s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.592s] -- Found PythonExtra: .so  
+[0.612s] -- Added test 'lint_cmake' to check CMake code style
+[0.613s] -- Added test 'xmllint' to check XML markup files
+[0.616s] -- Configuring done
+[0.633s] -- Generating done
+[0.639s] -- Build files have been written to: /home/fred/mobile_robotics/assignments/assignment1/build/assignment1
+[0.643s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fred/mobile_robotics/assignments/assignment1/src/assignment1 -DCMAKE_INSTALL_PREFIX=/home/fred/mobile_robotics/assignments/assignment1/install/assignment1
+[0.644s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fred/mobile_robotics/assignments/assignment1/build/assignment1 -- -j16 -l16
+[0.668s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.673s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.678s] [  6%] Built target ament_cmake_python_copy_assignment1
+[0.787s] running egg_info
+[0.787s] creating assignment1.egg-info
+[0.787s] writing assignment1.egg-info/PKG-INFO
+[0.787s] writing dependency_links to assignment1.egg-info/dependency_links.txt
+[0.787s] writing top-level names to assignment1.egg-info/top_level.txt
+[0.788s] writing manifest file 'assignment1.egg-info/SOURCES.txt'
+[0.788s] reading manifest file 'assignment1.egg-info/SOURCES.txt'
+[0.789s] writing manifest file 'assignment1.egg-info/SOURCES.txt'
+[0.803s] [  6%] Built target ament_cmake_python_build_assignment1_egg
+[0.865s] [  9%] [32mBuilding C object CMakeFiles/assignment1__rosidl_generator_c.dir/rosidl_generator_c/assignment1/action/detail/pos__functions.c.o[0m
+[0.865s] [  9%] Built target assignment1__cpp
+[0.871s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.871s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.871s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.936s] [ 22%] [32m[1mLinking C shared library libassignment1__rosidl_generator_c.so[0m
+[0.958s] [ 22%] Built target assignment1__rosidl_generator_c
+[0.964s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.964s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.964s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.002s] [ 35%] [32mBuilding CXX object CMakeFiles/assignment1__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assignment1/action/pos__type_support.cpp.o[0m
+[1.027s] [ 38%] [32mBuilding CXX object CMakeFiles/assignment1__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assignment1/action/detail/pos__type_support.cpp.o[0m
+[1.052s] [ 41%] [32mBuilding CXX object CMakeFiles/assignment1__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assignment1/action/detail/dds_fastrtps/pos__type_support.cpp.o[0m
+[1.096s] [ 45%] [32mBuilding CXX object CMakeFiles/assignment1__rosidl_typesupport_c.dir/rosidl_typesupport_c/assignment1/action/pos__type_support.cpp.o[0m
+[1.124s] [ 48%] [32m[1mLinking CXX shared library libassignment1__rosidl_typesupport_c.so[0m
+[1.132s] [ 51%] [32mBuilding C object CMakeFiles/assignment1__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assignment1/action/detail/pos__type_support.c.o[0m
+[1.140s] [ 54%] [32mBuilding CXX object CMakeFiles/assignment1__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assignment1/action/detail/pos__type_support_c.cpp.o[0m
+[1.149s] [ 54%] Built target assignment1__rosidl_typesupport_c
+[1.159s] [ 58%] [32m[1mLinking C shared library libassignment1__rosidl_typesupport_introspection_c.so[0m
+[1.178s] [ 58%] Built target assignment1__rosidl_typesupport_introspection_c
+[1.221s] [ 61%] [32m[1mLinking CXX shared library libassignment1__rosidl_typesupport_cpp.so[0m
+[1.247s] [ 61%] Built target assignment1__rosidl_typesupport_cpp
+[1.311s] [ 64%] [32m[1mLinking CXX shared library libassignment1__rosidl_typesupport_introspection_cpp.so[0m
+[1.320s] [ 67%] [32m[1mLinking CXX shared library libassignment1__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.329s] [ 70%] [32m[1mLinking CXX shared library libassignment1__rosidl_typesupport_fastrtps_c.so[0m
+[1.354s] [ 70%] Built target assignment1__rosidl_typesupport_introspection_cpp
+[1.364s] [ 70%] Built target assignment1__rosidl_typesupport_fastrtps_cpp
+[1.370s] [ 70%] Built target assignment1__rosidl_typesupport_fastrtps_c
+[1.382s] [ 70%] Built target assignment1
+[1.393s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.711s] [ 74%] Built target assignment1__py
+[1.722s] [ 77%] [32mBuilding C object CMakeFiles/assignment1__rosidl_generator_py.dir/rosidl_generator_py/assignment1/action/_pos_s.c.o[0m
+[1.793s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/assignment1/libassignment1__rosidl_generator_py.so[0m
+[1.817s] [ 80%] Built target assignment1__rosidl_generator_py
+[1.828s] [ 83%] [32mBuilding C object CMakeFiles/assignment1__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/assignment1/_assignment1_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.828s] [ 87%] [32mBuilding C object CMakeFiles/assignment1__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/assignment1/_assignment1_s.ep.rosidl_typesupport_c.c.o[0m
+[1.828s] [ 90%] [32mBuilding C object CMakeFiles/assignment1__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/assignment1/_assignment1_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.891s] [100%] [32m[1mLinking C shared library rosidl_generator_py/assignment1/assignment1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.891s] [100%] [32m[1mLinking C shared library rosidl_generator_py/assignment1/assignment1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.891s] [100%] [32m[1mLinking C shared library rosidl_generator_py/assignment1/assignment1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.914s] [100%] Built target assignment1__rosidl_typesupport_fastrtps_c__pyext
+[1.914s] [100%] Built target assignment1__rosidl_typesupport_c__pyext
+[1.914s] [100%] Built target assignment1__rosidl_typesupport_introspection_c__pyext
+[1.921s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fred/mobile_robotics/assignments/assignment1/build/assignment1 -- -j16 -l16
+[1.927s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/fred/mobile_robotics/assignments/assignment1/build/assignment1
+[1.931s] -- Install configuration: ""
+[1.931s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/ament_index/resource_index/rosidl_interfaces/assignment1
+[1.931s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.931s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.931s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/pos.h
+[1.931s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__struct.h
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__type_support.h
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__functions.h
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__functions.c
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg/rosidl_generator_c__visibility_control.h
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/library_path.sh
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/library_path.dsv
+[1.932s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_generator_c.so
+[1.932s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_generator_c.so" to ""
+[1.932s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__rosidl_typesupport_fastrtps_c.h
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_fastrtps_c.so
+[1.933s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_fastrtps_c.so" to ""
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__type_support.c
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__rosidl_typesupport_introspection_c.h
+[1.933s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.933s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_introspection_c.so
+[1.934s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_introspection_c.so" to ""
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_c.so
+[1.934s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_c.so" to ""
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__struct.hpp
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__builder.hpp
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__traits.hpp
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__type_support.hpp
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/pos.hpp
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.934s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/dds_fastrtps
+[1.934s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__rosidl_typesupport_fastrtps_cpp.hpp
+[1.935s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_fastrtps_cpp.so
+[1.935s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.935s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1
+[1.935s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action
+[1.935s] -- Up-to-date: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__rosidl_typesupport_introspection_cpp.hpp
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/include/assignment1/assignment1/action/detail/pos__type_support.cpp
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_introspection_cpp.so
+[1.935s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_introspection_cpp.so" to ""
+[1.935s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_cpp.so
+[1.936s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_typesupport_cpp.so" to ""
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/pythonpath.sh
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/pythonpath.dsv
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1-0.0.0-py3.10.egg-info
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1-0.0.0-py3.10.egg-info/PKG-INFO
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1-0.0.0-py3.10.egg-info/top_level.txt
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.936s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/_assignment1_s.ep.rosidl_typesupport_introspection_c.c
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/_assignment1_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/__init__.py
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/_assignment1_s.ep.rosidl_typesupport_c.c
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/libassignment1__rosidl_generator_py.so
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action/__init__.py
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action/_pos.py
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action/_pos_s.c
+[1.937s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.956s] Listing '/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1'...
+[1.956s] Compiling '/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/__init__.py'...
+[1.956s] Listing '/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action'...
+[1.957s] Compiling '/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action/__init__.py'...
+[1.957s] Compiling '/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/action/_pos.py'...
+[1.959s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.959s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.959s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.959s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.959s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.960s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/local/lib/python3.10/dist-packages/assignment1/assignment1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_generator_py.so
+[1.960s] -- Set runtime path of "/home/fred/mobile_robotics/assignments/assignment1/install/assignment1/lib/libassignment1__rosidl_generator_py.so" to ""
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/action/Pos.idl
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/action/Pos.action
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/ament_index/resource_index/package_run_dependencies/assignment1
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/ament_index/resource_index/parent_prefix_path/assignment1
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/ament_prefix_path.sh
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/ament_prefix_path.dsv
+[1.960s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/path.sh
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/environment/path.dsv
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/local_setup.bash
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/local_setup.sh
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/local_setup.zsh
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/local_setup.dsv
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/package.dsv
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/ament_index/resource_index/packages/assignment1
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_generator_cExport.cmake
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_generator_cExport-noconfig.cmake
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_typesupport_fastrtps_cExport.cmake
+[1.961s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_introspection_cExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_cExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_cExport-noconfig.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_generator_cppExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_introspection_cppExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_cppExport.cmake
+[1.962s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1__rosidl_typesupport_cppExport-noconfig.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_generator_pyExport.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/export_assignment1__rosidl_generator_pyExport-noconfig.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/rosidl_cmake-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/ament_cmake_export_libraries-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/ament_cmake_export_targets-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1Config.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/cmake/assignment1Config-version.cmake
+[1.963s] -- Installing: /home/fred/mobile_robotics/assignments/assignment1/install/assignment1/share/assignment1/package.xml
+[1.965s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment1/build/assignment1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/fred/mobile_robotics/assignments/assignment1/build/assignment1

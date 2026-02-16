@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9c979cef53ead590ced7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "assignment1__py",
+					"jsonFile" : "directory-assignment1__py-c3fcbe4547f0c2f61f44.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/fred/mobile_robotics/assignments/assignment1/build/assignment1/assignment1__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "assignment1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_assignment1_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_assignment1_egg-4de775c3944b391aa11d.json",
+					"name" : "ament_cmake_python_build_assignment1_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_assignment1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_assignment1-ed0e0b8364a1babf28e6.json",
+					"name" : "ament_cmake_python_copy_assignment1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1-c003bf5338236011eeef.json",
+					"name" : "assignment1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__cpp-4c8e9136f7e831d511a9.json",
+					"name" : "assignment1__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "assignment1__py::@a16bc9714387426778f9",
+					"jsonFile" : "target-assignment1__py-4dc9244ede14edb40b84.json",
+					"name" : "assignment1__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_generator_c-a4f32aba624f9f6e6dce.json",
+					"name" : "assignment1__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_generator_py-edc39818ad844ab4d9ab.json",
+					"name" : "assignment1__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_c-503037f92bdf96ab5a27.json",
+					"name" : "assignment1__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_c__pyext-4d86d1f380ec4747d436.json",
+					"name" : "assignment1__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_cpp-eb5de5db9f6170cd620f.json",
+					"name" : "assignment1__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_fastrtps_c-585f5d13793ae5201e8e.json",
+					"name" : "assignment1__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_fastrtps_c__pyext-8ff11c9407e31cebc25a.json",
+					"name" : "assignment1__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_fastrtps_cpp-3e8db700e05227353f8d.json",
+					"name" : "assignment1__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_introspection_c-e930d946af09528178b6.json",
+					"name" : "assignment1__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_introspection_c__pyext-932712ba2ad86e8bec1f.json",
+					"name" : "assignment1__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1__rosidl_typesupport_introspection_cpp-45f28a72f047968f525b.json",
+					"name" : "assignment1__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1_uninstall-8f588532ec1c22276120.json",
+					"name" : "assignment1_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0231d1cddae2e12eb966.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fred/mobile_robotics/assignments/assignment1/build/assignment1",
+		"source" : "/home/fred/mobile_robotics/assignments/assignment1/src/assignment1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
