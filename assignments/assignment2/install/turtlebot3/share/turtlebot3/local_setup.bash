@@ -1,0 +1,1 @@
+/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3/ament_cmake_environment_hooks/local_setup.bash

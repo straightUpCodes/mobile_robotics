@@ -1,0 +1,53 @@
+[0.169s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/fred/mobile_robotics/assignments/assignment2/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2
+[0.210s] -- The C compiler identification is GNU 11.4.0
+[0.249s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.308s] -- Detecting C compiler ABI info - done
+[0.312s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.312s] -- Detecting C compile features
+[0.312s] -- Detecting C compile features - done
+[0.314s] -- Detecting CXX compiler ABI info
+[0.367s] -- Detecting CXX compiler ABI info - done
+[0.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.371s] -- Detecting CXX compile features
+[0.371s] -- Detecting CXX compile features - done
+[0.377s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.469s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.509s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.584s] -- Configuring done
+[0.586s] -- Generating done
+[0.587s] -- Build files have been written to: /home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2
+[0.592s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/fred/mobile_robotics/assignments/assignment2/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2
+[0.593s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2 -- -j16 -l16
+[0.626s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2 -- -j16 -l16
+[0.627s] Invoking command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2
+[0.631s] -- Install configuration: ""
+[0.632s] -- Execute custom install script
+[0.632s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[0.638s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.pgm
+[0.643s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.yaml
+[0.649s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[0.654s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger_cam.yaml
+[0.660s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger.yaml
+[0.665s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger_cam.yaml
+[0.670s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle.yaml
+[0.676s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle_pi.yaml
+[0.681s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[0.687s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[0.693s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[0.700s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[0.706s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[0.712s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[0.717s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[0.723s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[0.728s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[0.734s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[0.740s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[0.746s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[0.751s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[0.758s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[0.764s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[0.770s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[0.777s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[0.784s] -- Symlinking: /home/fred/mobile_robotics/assignments/assignment2/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[0.792s] Invoked command in '/home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fred/turtlebot3_ws/install/turtlebot3_teleop:/home/fred/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/fred/mobile_robotics/assignments/assignment2/build/turtlebot3_navigation2
