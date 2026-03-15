@@ -45,4 +45,4 @@ To load the map:
 
 - Each room has been annotated on the map found in src/autonomous_vacuum/maps/house_map_annotated.png
 
-- The bedroom, and family room have been given 8 and 10 points intead of 10 seen in other rooms. This is because the shelves found in those rooms did not present as barriers in the map, however the vacuum should not go over them and therefore the room coordiantes were set to exclude them.
+- The bedroom, and family room have been given 8 and 10 points respectively intead of the 4 seen in other rooms. This is because the shelves found in those rooms did not present as barriers in the map, however the vacuum should not go over them and therefore the room coordiantes were set to exclude them.
