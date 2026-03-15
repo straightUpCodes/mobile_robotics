@@ -1,27 +1,42 @@
 # Steps
 
-- [ ] Ensure phase 1 and 2 steps match specification and are not missing
-- [ ] Create further steps for all other phases
-- [ ] Complate phase 1
+- [x] Ensure phase 1 and 2 steps match specification and are not missing
+- [x] Complete phase 1
 - [ ] Create necessary notes and README.md for phase 1
-- [ ] Complate phase 2
+- [x] Complete phase 2
 - [ ] Create necessary notes and README.md for phase 2
-- [ ] Complate phase 3
+- [ ] Complete phase 3
 - [ ] Create necessary notes and README.md for phase 3
-- [ ] Complate phase 4
+- [ ] Complete phase 4
 - [ ] Create necessary notes and README.md for phase 4
-- [ ] Complate phase 5
+- [ ] Complete phase 5
 - [ ] Create necessary notes and README.md for phase 5
-- [ ] Complate phase 6
+- [ ] Complete phase 6
 - [ ] Create necessary notes and README.md for phase 6
 
 # Userful references:
 
-- SLAM: https://github.com/SteveMacenski/slam_toolbox
+- SLAM:
+  https://github.com/SteveMacenski/slam_toolbox
+  https://www.youtube.com/watch?v=ZaiA3hWaRzE
+  https://www.youtube.com/watch?v=hMTxb8Y2cxI
 
 - Turtlebot 3: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview
 
 - Nav2: https://docs.nav2.org
+
+- House simulation: https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/
+
+# Notes:
+
+## Terminal shortcuts
+
+alias eb='nano ~/.bashrc'
+alias sb='source ~/.bashrc'
+
+alias ws='cd ~/mobile_robotics/tb3_ws'
+alias src='cd ~/mobile_robotics/tb3_ws/src'
+alias cb='colcon build --symlink-install'
 
 # Plan:
 
@@ -91,86 +106,42 @@ The final system must be rigorously tested against the instructor's external cov
 
 - Submit a short explanation covering how rooms are represented, the automatic cleaning strategy, how Nav2 goals are sent, and the effects of parameter tuning.
 
-# Tasks
+# Steps taken:
 
-## Task 1.1: Workspace and Package Initialization
+## Folder set up
 
-Before launching any simulations, we must set up the directory structure where our code will live.
+Reference: S04T01_ROS2_Basics
 
-    Create the Workspace: Initialize a standard ROS2 colcon workspace (e.g., ~/tb3_ws/src).
+mkdir src
+colcon build --symlink-install
+source install/setup.bash
 
-    Generate the Package: Create our own new ROS2 package that contains our project logic. Depending on our team's preference, generate this as a Python (ament_python) or C++ (ament_cmake) package.
+cd src
+ros2 pkg create --build-type ament_python autonomous_vacuum --dependencies rclpy
 
-    Create Standard Directories: Inside our new package, create standard ROS2 subdirectories for our project logic: nodes, launch (for launch files), and config (for config files like room names/boundaries).
+Edit description, email and license in package.xml and setup.py
 
-    Define Dependencies: Update our package.xml and CMakeLists.txt (or setup.py) to include dependencies on rclpy/rclcpp, geometry_msgs, nav2_msgs, and the standard TurtleBot3 packages. This ensures our package builds and runs reliably.
+## Phase 1
 
-## Task 1.2: Environment Simulation Launch
+https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 
-We need to get the virtual robot running in the specified world to begin mapping.
+https://docs.nav2.org/tutorials/docs/navigation2_with_slam.html
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true
+ros2 run rviz2 rviz2 --ros-args -p use_sim_time:=true
 
-    Set Environment Variables: Export the necessary TurtleBot3 environment variables (e.g., export TURTLEBOT3_MODEL=waffle).
+Add robot model, tf2, and map and select /robot_description, and /map for robot model and map display respectively
 
-    Launch the World: Launch the TurtleBot3 in Gazebo using the provided House/Home world. Verify that the robot spawns correctly and the physics engine is stable.
+https://index.ros.org/p/joy/ and https://docs.ros.org/en/iron/p/teleop_twist_joy/
+ros2 run joy joy_node --ros-args -p use_sim_time:=true
+ros2 run teleop_twist_joy teleop_node --ros-args --params-file src/autonomous_vacuum/config/ps5.yaml -p use_sim_time:=true
 
-## Task 1.3: SLAM Execution and Map Generation
+Move robot around each room while observing gazebo, and Rviz at the same time. Once map has been generated, save map using plugin.
 
-With the simulation running, we must create the static map that the Navigation stack (Nav2) will use later.
+## Phase 2
 
-    Start SLAM: Launch the SLAM node. We may use existing ROS2 packages for SLAM (map creation). Run the SLAM method as practiced in class.
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=/home/fred/mobile_robotics/tb3_ws/src/autonomous_vacuum/maps/house_map.yaml
+ros2 topic echo /clicked_point
 
-    Teleoperate and Map: Use a teleoperation node (keyboard or joystick) to drive the TurtleBot3 around the Gazebo House world, ensuring we cover all rooms to build a complete occupancy grid.
-
-    Save the Map: Once the map is fully generated, use the nav2_map_server map saver CLI to export the map. This will generate a .yaml and a .pgm (or .png) file. Save these files into the config or maps directory of our custom ROS2 package.
-
-## Task 1.4: Documentation and Reproducibility Setup
-
-Our instructor will evaluate how easily we can run our code. This must be documented immediately.
-
-    Draft the README: Create a clear README with step-by-step run instructions.
-
-    Document Mapping Instructions: Provide clear instructions to reproduce the mapping step, or explicitly document the command to load the saved map we generated in Task 1.3.
-
-    Version Control: Commit our initialized package, the saved map files, and the initial README to our Git repository.
-
-## Task 2.1: Coordinate Extraction (The Map Frame)
-
-Before writing code, you need to extract the physical coordinates of the rooms from the map you generated in Phase 1.
-
-    Launch RViz: Open your saved map in RViz.
-
-    Extract Points: Use the "Publish Point" tool in RViz to find the (x,y) coordinates for the corners of each room.
-
-    Adhere to Frame Constraints: Ensure these extracted coordinates are strictly relative to the map frame.
-
-    Define Boundaries: You must define room boundaries so the robot knows which area belongs to each room. A simple minimum option is a rectangle consisting of 4 points, though other representations are allowed if documented.
-
-## Task 2.2: Configuration File Creation
-
-Hardcoding coordinates into your Python or C++ scripts is bad practice. You must utilize ROS2 parameter files to meet the reproducibility and packaging requirements.
-
-    Create a YAML File: Create a .yaml configuration file within your custom ROS2 package.
-
-    Define Room Data: Within this file, define rooms with specific room names (e.g., kitchen, bedroom, living_room).
-
-    Map Boundaries: Assign the boundary points you extracted in Task 2.1 to their respective room names within the YAML structure.
-
-    Ensure Reproducibility: Structuring the data this way guarantees that the room definitions must be reproducible, meaning they use the same names and boundaries every run.
-
-## Task 2.3: Parameter Loading Node Implementation
-
-Next, you need a way for your ROS2 system to ingest this YAML file so the autonomy layer can access the data.
-
-    Write a Parser Node: Create a ROS2 node (or integrate it into your main autonomy node) that reads the YAML file upon startup.
-
-    Store in Memory: Store the room names and their corresponding map frame boundary points in a readily accessible data structure, such as a dictionary in Python or a std::map in C++.
-
-    Verify Alignment: Print the loaded parameters to the terminal on startup to verify that the system has successfully loaded the correct room names and boundaries in the map frame, which is a core grading requirement worth 10 points.
-
-## Task 2.4: Architecture Documentation
-
-Keep your documentation updated concurrently with your development to ensure you secure the reproducibility points.
-
-    Update the README: Add a section to your README explaining how the rooms are represented.
-
-    Document Custom Logic: If you chose to represent boundaries using a shape other than a 4-point rectangle, you must ensure it is documented.
+To get robot model and nav2 goal set up set initial pose estimate
