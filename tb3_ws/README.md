@@ -6,11 +6,11 @@ To generate the map, first run Gazebo:
 
 Afterwards run slam_toolbox so that LiDAR data can be used to generate the map:
 
-    ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true
+    ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
 
 Run RViz to open up the map visualizing:
 
-    ros2 run rviz2 rviz2 --ros-args -p use_sim_time:=true
+    ros2 run rviz2 rviz2 --ros-args -p use_sim_time:=True
 
     Add robot model, tf2, and map. Next select /robot_description, and /map for robot model and map display respectively. At this point the map, TF, and robot sould all be visible
 
@@ -18,14 +18,14 @@ Setup input:
 
     Run joy and teleop nodes to use PS5 controller as input:
 
-        ros2 run joy joy_node --ros-args -p use_sim_time:=true
-        ros2 run teleop_twist_joy teleop_node --ros-args --params-file src/autonomous_vacuum/config/ps5.yaml -p use_sim_time:=true
+        ros2 run joy joy_node
+        ros2 run teleop_twist_joy teleop_node --ros-args --params-file src/autonomous_vacuum/config/ps5.yaml
 
         Since PS5 controller is not native to teleop_twist_joy, a custom ps5.yaml config file was created.
 
     If keyboard input is preffered use the following:
 
-        ros2 run turtlebot3_teleop teleop_keyboard --ros-args -p use_sim_time:=true
+        ros2 run turtlebot3_teleop teleop_keyboard
 
 Generate map:
 
@@ -35,7 +35,7 @@ To load the map:
 
     Map files are found in  src/autonomous_vacuum/maps
 
-    ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=src/autonomous_vacuum/maps/house_map.yaml
+    ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=/home/fred/mobile_robotics/tb3_ws/src/autonomous_vacuum/maps/map_toolbox.yaml
 
 # Room specifications
 

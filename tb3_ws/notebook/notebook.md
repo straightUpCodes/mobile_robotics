@@ -145,3 +145,37 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:
 ros2 topic echo /clicked_point
 
 To get robot model and nav2 goal set up set initial pose estimate
+
+## Assignment 3
+
+Lua file: /home/fred/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+
+ros2 topic echo /map --once before moving
+
+[x] Set max speeds in controlelr YAML
+[x] create and save one map using SLAM Toolbox
+[x] record a short video (about 10 seconds) while mapping
+[x] create and save one map using Cartographer
+
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+
+[x] record a short video (about 10 seconds) while mapping
+[x] change one parameter in Cartographer
+TRAJECTORY_BUILDER_2D.max_range
+Old: 3.5
+New: 2
+Differences observed:
+Must make more loops to cover the same area. Even when near a wall, it faces difficulty mapping it. It seems than lowering it below 3.5 causes degreadtion of performance rather than an improvement.
+
+Change one parameter in SLAM Toolbox
+resolution
+Old: 0.05
+New: 0.03
+Differences observed
+Negligible deifference was found after the change. Initially it was tested at 0.01, then 0.001, and then finally a full map genrated with 0.03. Anything past 0.01 is negligible since the LDS-01 which the TurtleBot3 uses has an error margin of 0.01. Regardless reducing the resolution did not create any vast changes in the quality of the map.
+
+segment your map into rooms and document room boundary points
+room name, and annotations
+room boundaries in pixels
+room boundaries in meters
+briefly research the algorithmic difference between Cartographer and SLAM Toolbox
