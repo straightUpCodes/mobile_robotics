@@ -2,7 +2,7 @@
 
 - [x] Ensure phase 1 and 2 steps match specification and are not missing
 - [x] Complete phase 1
-- [ ] Create necessary notes and README.md for phase 1
+- [x] Create necessary notes and README.md for phase 1
 - [x] Complete phase 2
 - [ ] Create necessary notes and README.md for phase 2
 - [ ] Complete phase 3
@@ -179,3 +179,50 @@ room name, and annotations
 room boundaries in pixels
 room boundaries in meters
 briefly research the algorithmic difference between Cartographer and SLAM Toolbox
+
+## Phase 3 and on
+
+[x] Read and find coverage path planning options - 24th
+
+[x] Formulate best algorthim to use - 24th
+
+[ ] Create system diagrams of how they would work with a plan for the code. - 25th
+
+[ ] Write code - 29th
+
+[ ] Test and integrate - 31st, 3rd
+
+[ ] Clean repo - 2nd
+
+[ ] Document system design, and other techincal work in a clean matter - 4th, 5th
+
+### Coverage path planning research
+
+- https://www.ri.cmu.edu/pub_files/pub4/choset_howie_1997_3/choset_howie_1997_3.pdf
+
+  Really old but simple to use.
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11029278
+
+  Very advanced but could be overkill
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9523743
+
+  Comparison guide "cellular decomposition is the simplest
+  method to segment the region into smaller sub-area"
+
+- https://ieeexplore.ieee.org/document/10946186
+
+  General CPP survey
+
+It all starts with heursitic vs classical algorhtim. Because our project explicitly looks for good coverage, the advantage is given to calssical algorhtims. THe main and aboslute reason classical algothim should be used is the the size and simnplicity of the space aswell as the determinsitc nature of the robot task. Hueristic algorhtims are used when the mathamteical calculation of the classical apporach is not feasible, therefore a best good enough solution is chosen. Feasibility is not an issue with this project and a classical solution is more than possible and therefore should be chosen.
+
+Since the house has rooms which are ploygon shaped, there are few obstacles, and each room is mapped into well defined polygons, BCD algorithm becomes the best choice.
+
+### Search algorhtims
+
+- https://en.wikipedia.org/wiki/A*_search_algorithm and https://www.datacamp.com/tutorial/a-star-algorithm
+  A\*
+
+- https://en.wikipedia.org/wiki/D_ and https://cdn.aaai.org/AAAI/2002/AAAI02-072.pdf
+  D\* Lite
