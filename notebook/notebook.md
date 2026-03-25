@@ -186,7 +186,11 @@ briefly research the algorithmic difference between Cartographer and SLAM Toolbo
 
 [x] Formulate best algorthim to use - 24th
 
+[ ] How will table legs work with BCD? - 25th
+
 [ ] Create system diagrams of how they would work with a plan for the code. - 25th
+
+[ ] Finalize map with shelves drawn out - 29th
 
 [ ] Write code - 29th
 
