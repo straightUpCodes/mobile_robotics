@@ -146,7 +146,7 @@ ros2 topic echo /clicked_point
 
 To get robot model and nav2 goal set up set initial pose estimate
 
-## Assignment 3
+# Assignment 3
 
 Lua file: /home/fred/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
 
@@ -180,17 +180,19 @@ room boundaries in pixels
 room boundaries in meters
 briefly research the algorithmic difference between Cartographer and SLAM Toolbox
 
-## Phase 3 and on
+# Phase 3 and on
 
 [x] Read and find coverage path planning options - 24th
 
 [x] Formulate best algorthim to use - 24th
 
-[ ] How will table legs work with BCD? - 25th
+[x] How will table legs work with BCD? - 25th
 
 [ ] Create system diagrams of how they would work with a plan for the code. - 25th
 
 [ ] Finalize map with shelves drawn out - 29th
+
+[ ] Create room boundary YAML file for final map used - 29th
 
 [ ] Write code - 29th
 
@@ -200,7 +202,7 @@ briefly research the algorithmic difference between Cartographer and SLAM Toolbo
 
 [ ] Document system design, and other techincal work in a clean matter - 4th, 5th
 
-### Coverage path planning research
+## Coverage path planning research
 
 - https://www.ri.cmu.edu/pub_files/pub4/choset_howie_1997_3/choset_howie_1997_3.pdf
 
@@ -223,10 +225,31 @@ It all starts with heursitic vs classical algorhtim. Because our project explici
 
 Since the house has rooms which are ploygon shaped, there are few obstacles, and each room is mapped into well defined polygons, BCD algorithm becomes the best choice.
 
-### Search algorhtims
+## Search algorhtims
 
 - https://en.wikipedia.org/wiki/A*_search_algorithm and https://www.datacamp.com/tutorial/a-star-algorithm
   A\*
 
 - https://en.wikipedia.org/wiki/D_ and https://cdn.aaai.org/AAAI/2002/AAAI02-072.pdf
   D\* Lite
+
+A\* algorithm is better used here since the obstacles are not dynamic.
+
+## System architecture
+
+- Generate map using SLAM toolbox, and assign names and boundaries to each room with YAML file containing the information.
+
+- Go to room function uses predefined coordinates to move to room with navigator goal (NavigateToPose).
+
+- Decompose map into cells where width is equal to the width of waffle pi - desired overlap and length of waffle pi
+  According to https://emanual.robotis.com/docs/en/platform/turtlebot3/features/ the width is 306 mm, giving an overlap 10%, or ~30 mm. The length is 281 mm meaning that each cell should be 276x281 mm.
+
+- Depending on where the robot currently is, the closest corner of the room will be found and waypoints will start from there.
+
+- The waypoints will use The Boustrophedon motion where the robot travels at the center of the cells from one to the next.
+
+- When an obstacle is faced during waypoint generation, it will use getPath() to find the shortest path between where the cell before the obstacle and the one that is free after and add it to the waypoints.
+
+- The roobot will then use these waypoints and FollowWaypoints Nav2 API to cover the room, any cell which is covered succesfully will be added to list of succesfully cleaned cells.
+
+- If FollowWaypoints goal reaches a failure, the robot will add the missed cell(s) to missed queue. For each missed cell revist the blocked areas at the end using NavigateToPose, if it fails agian discard from queue and move on to the next.
